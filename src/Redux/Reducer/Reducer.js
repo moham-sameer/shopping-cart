@@ -36,7 +36,7 @@
               ...state,
               carts:[...state.carts]
             }
-          } else if(state.carts[itemIndex_dec].qnty === 0){
+          } else if(state.carts[itemIndex_dec].qnty === 1){
             const value = state.carts.filter((el)=>el.id !== action.payload)
                   return{
                       ...state, carts: value
